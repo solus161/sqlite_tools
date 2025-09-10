@@ -251,7 +251,6 @@ class BasicModel():
     class __meta__():
         db_name: ClassVar[Union[str, None]] = None
 
-
 class BasicTestModel(BasicModel):
     text = DataTypeString(not_null=True)
     nbr = DataTypeInteger()
